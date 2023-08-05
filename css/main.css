@@ -1,0 +1,116 @@
+:root
+{
+    --background-color: rgb(25, 134, 130);
+    --border-color: rgb(255, 255, 255, 0.1);
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+body 
+{
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
+
+h1, h2, h3, a, p, span 
+{
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: 1.5em;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+nav
+{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav > .nav-section
+{
+    padding: 3em 2em;
+    display: flex;
+    gap: 3em;
+    border-left: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-logo-section, #nav-link-section
+{
+    flex-basis: calc(100% / 3);
+}
+
+#nav-link-section
+{
+    gap: 6rem;
+}
+
+#nav-social-section
+{
+    gap: 3rem;
+}
+
+#nav-social-section, #nav-contact-section
+{
+    flex-grow: 1;
+}
+
+.linkedin-logo, .x-logo, .github-logo
+{
+    height: 1.5em !important;
+    width: 1.5em !important;
+}
+
+main
+{
+    flex-grow: 1;
+}
+
+main > article 
+{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+main > article > .article-section
+{
+    height: 100%;
+}
+
+main > article > .article-nav-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > article > .article-description-section, main > article > .article-nav-section
+{
+    border-left: 1px solid var(--border-color);
+}
+
+main > article > .article-title-section, main > article > .article-nav-section
+{
+    border-top: 1px solid var(--border-color);
+}
+
+.angle-left, .angle-right, .nav-left, .nav-right
+{
+    height: 10em !important;
+    width: 10em !important;
+}
